@@ -53,8 +53,8 @@ async def download_video(update: Update, context:ContextTypes.DEFAULT_TYPE):
 
     ydl_opts = {
         "outtmpl": output_path,
-        #"format":"best[ext=mp4]",
-        "format":"bestvideo+bestaudio/best",
+        "format":"best[ext=mp4]",
+        #"format":"bestvideo+bestaudio/best",
         "merge_output_format":"mp4",
         "quiet": True,
         "noplaylist": True,
